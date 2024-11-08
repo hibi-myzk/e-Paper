@@ -33,8 +33,9 @@ try:
     # HBlackimage = Image.open(os.path.join(picdir, '2in9bc-b.bmp'))
     # HRYimage = Image.open(os.path.join(picdir, '2in9bc-ry.bmp'))
     # epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRYimage))
-    logo = Image.open(os.path.join(picdir, 'logo.bmp'))
-    epd.display(epd.getbuffer(logo))
+    logo_b = Image.open(os.path.join(picdir, 'logo_b.bmp'))
+    logo_ry= Image.open(os.path.join(picdir, 'logo_ry.bmp'))
+    epd.display(epd.getbuffer(logo_b), epd.getbuffer(logo_ry))
     time.sleep(2)
     
     # Drawing on the Horizontal image
